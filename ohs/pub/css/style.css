@@ -8539,6 +8539,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
         padding-left: 15px; } }
   @media (min-width: 992px) {
         .fornecedor .dados-fornecedor article ul li p {
+          width: 100%;
+          text-align: left;
           position: relative;
           top: -27px;
           float: right;
@@ -8965,7 +8967,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       padding-left: 15px; } }
 
 .listagem {
-  width: 100%; }
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
   .listagem article {
     display: block;
     margin: 1em 0;
@@ -8973,7 +8980,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     text-align: center;
     width: 100%;
     border-radius: 5px;
-    border: 1px solid #b3b3b3; }
+    border: 1px solid #b3b3b3;
+    -ms-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in; }
     .listagem article figure,
     .listagem article hgroup,
     .listagem article .bts {
@@ -9056,32 +9067,61 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       padding: .3em .9em;
       border: 2px solid transparent; }
   .listagem.js-quadrado article {
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    border: none; }
-    @media (min-width: 576px) {
-      .listagem.js-quadrado article {
-        padding-right: 15px;
-        padding-left: 15px; } }
-    @media (min-width: 768px) {
-      .listagem.js-quadrado article {
-        padding-right: 15px;
-        padding-left: 15px; } }
-    @media (min-width: 992px) {
-      .listagem.js-quadrado article {
-        padding-right: 15px;
-        padding-left: 15px; } }
-    @media (min-width: 1200px) {
-      .listagem.js-quadrado article {
-        padding-right: 15px;
-        padding-left: 15px; } }
-    .listagem.js-quadrado article figure img {
-      padding-bottom: 20px;
-      border-bottom: 1px solid #b3b3b3; }
-    .listagem.js-quadrado article .bts strong {
-      top: -5px; }
+    display: block;
+    width: 240px;
+    margin: 1em 0;
+    padding: 1em 0;
+    text-align: center;
+    border-radius: 5px;
+    -ms-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    border: none;
+    text-align: center; }
+    .listagem.js-quadrado article figure,
+    .listagem.js-quadrado article hgroup,
+    .listagem.js-quadrado article .bts {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 576px) {
+        .listagem.js-quadrado article figure,
+        .listagem.js-quadrado article hgroup,
+        .listagem.js-quadrado article .bts {
+          padding-right: 15px;
+          padding-left: 15px; } }
+      @media (min-width: 768px) {
+        .listagem.js-quadrado article figure,
+        .listagem.js-quadrado article hgroup,
+        .listagem.js-quadrado article .bts {
+          padding-right: 15px;
+          padding-left: 15px; } }
+      @media (min-width: 992px) {
+        .listagem.js-quadrado article figure,
+        .listagem.js-quadrado article hgroup,
+        .listagem.js-quadrado article .bts {
+          padding-right: 15px;
+          padding-left: 15px; } }
+      @media (min-width: 1200px) {
+        .listagem.js-quadrado article figure,
+        .listagem.js-quadrado article hgroup,
+        .listagem.js-quadrado article .bts {
+          padding-right: 15px;
+          padding-left: 15px; } }
+    .listagem.js-quadrado article figure {
+      padding-bottom: 1em;
+      border-right: none; }
+      .listagem.js-quadrado article figure img {
+        display: initial; }
+    .listagem.js-quadrado article .bts {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px; }
+      .listagem.js-quadrado article .bts strong {
+        position: relative;
+        top: 0px; }
   @media (min-width: 992px) {
     .listagem article {
       display: flex;
@@ -9161,76 +9201,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       .listagem article .bts {
         padding-right: 15px;
         padding-left: 15px; } }
-  @media (min-width: 992px) {
-    .listagem.js-quadrado article {
-      display: block;
-      flex: 0 0 33.33333%;
-      max-width: 33.33333%;
-      padding-right: 15px;
-      padding-left: 15px;
-      border: none;
-      text-align: center; } }
-  @media (min-width: 992px) and (min-width: 576px) {
-    .listagem.js-quadrado article {
-      padding-right: 15px;
-      padding-left: 15px; } }
-  @media (min-width: 992px) and (min-width: 768px) {
-    .listagem.js-quadrado article {
-      padding-right: 15px;
-      padding-left: 15px; } }
-  @media (min-width: 992px) and (min-width: 992px) {
-    .listagem.js-quadrado article {
-      padding-right: 15px;
-      padding-left: 15px; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
-    .listagem.js-quadrado article {
-      padding-right: 15px;
-      padding-left: 15px; } }
-  @media (min-width: 992px) {
-      .listagem.js-quadrado article figure,
-      .listagem.js-quadrado article hgroup,
-      .listagem.js-quadrado article .bts {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-right: 15px;
-        padding-left: 15px; } }
-    @media (min-width: 992px) and (min-width: 576px) {
-      .listagem.js-quadrado article figure,
-      .listagem.js-quadrado article hgroup,
-      .listagem.js-quadrado article .bts {
-        padding-right: 15px;
-        padding-left: 15px; } }
-    @media (min-width: 992px) and (min-width: 768px) {
-      .listagem.js-quadrado article figure,
-      .listagem.js-quadrado article hgroup,
-      .listagem.js-quadrado article .bts {
-        padding-right: 15px;
-        padding-left: 15px; } }
-    @media (min-width: 992px) and (min-width: 992px) {
-      .listagem.js-quadrado article figure,
-      .listagem.js-quadrado article hgroup,
-      .listagem.js-quadrado article .bts {
-        padding-right: 15px;
-        padding-left: 15px; } }
-    @media (min-width: 992px) and (min-width: 1200px) {
-      .listagem.js-quadrado article figure,
-      .listagem.js-quadrado article hgroup,
-      .listagem.js-quadrado article .bts {
-        padding-right: 15px;
-        padding-left: 15px; } }
-  @media (min-width: 992px) {
-      .listagem.js-quadrado article figure {
-        padding-bottom: 1em;
-        border-right: none; }
-        .listagem.js-quadrado article figure img {
-          display: initial; }
-      .listagem.js-quadrado article .bts {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px; }
-        .listagem.js-quadrado article .bts strong {
-          position: relative;
-          top: 0px; } }
 
 .relatorio .col-topo {
   width: 100%; }

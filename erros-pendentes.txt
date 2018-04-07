@@ -1,0 +1,4 @@
+ao cadastrar um novo produto, quando selecionamos uma subcategoria que possua um acento ou cedilha no nome 
+ex: Componentes Elétricos
+a consulta sql não encontra o item, apesar de ele existir na base de dados
+link: http://umpierre.net/jerry/nfteste/index.php?p=cadastro&q=show&nC=68

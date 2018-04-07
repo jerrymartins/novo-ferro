@@ -1,0 +1,47 @@
+		<!-- cabeçalho -->
+		<div class="cabecalho cabecalho-miolo">
+			<!-- imagens -->
+			<picture>
+				<source media="(max-width: 767px)" srcset="ohs/pub/images/cabecalho-miolo-cadastre-se-mobile.jpg" />
+				<source media="(min-width: 768px) and (max-width: 1024px)" srcset="ohs/pub/images/cabecalho-miolo-cadastre-se-tablet.jpg" />				
+				<img srcset="ohs/pub/images/cabecalho-miolo-cadastre-se-desktop.jpg" alt="" />
+			</picture>
+			
+			<!-- triangulo -->
+			<span></span>
+			<!-- triangulo -->
+			<!-- imagens fim -->
+			
+			<!-- container -->
+			<div class="container">
+				<!-- bloco -->
+				<div class="bloco linha">
+					<!-- título categorias  -->
+					<h1>[TITULO-CATEGORIAS]</h1>
+					<!-- título categorias  fim -->
+
+					<!-- buscar -->
+					<form action="index.php" method="get">
+						<input type="hidden" name="p" value="search"/>
+						<div class="bloco">
+
+							<select name="tipo" class="form-control">
+								<option value="produto">Produto</option>
+								<option value="oficina">Oficina</option>
+								<option value="fornecedor">Fornecedor</option>
+							</select>
+
+							<div class="relativo">
+								<input type="text" class="form-control form-control-lg" placeholder="O que você procura?" name="search" />
+								<i class="fa fa-search"></i>
+								<input type="submit" value="Buscar" />
+							</div>
+						</div>
+					</form>
+					<!-- buscar fim -->
+				</div>
+				<!-- bloco fim -->
+			</div>
+			<!-- container -->
+		</div>
+		<!-- cabeçalho fim -->

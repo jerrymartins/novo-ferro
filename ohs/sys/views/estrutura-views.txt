@@ -1,0 +1,31 @@
+head.html
+	propriedades
+		seoTitle
+		seoDescription
+		seoKeywords
+	Definir menus (1x)
+
+menu.php
+	logado ?? login/cadastre-se (2x)
+	nº de itens do carrinho
+
+
+cabecalho.html
+	propriedade title >> título da categoria
+	SEMPRE: Peças/...|Fornecedores|Oficinas| institucional (quem somos, fale consoco, etc)
+
+main.html
+	caminho de pão
+		Home > AM > Peças|Fornecedores|Oficinas > ...
+	CONTEUDO (>>> ex: modelo fornecedor)
+		
+footer.html
+
+
+============
+
+Na sessão ficam:
+	string estadoLogado
+	bool logado
+	string login (email)
+	string nome

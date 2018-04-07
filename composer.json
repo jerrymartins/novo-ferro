@@ -10,7 +10,8 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "OHS\\NF\\": "ohs/sys/classes/"
+            "OHS\\NF\\Model\\": "ohs/sys/models/",
+            "OHS\\NF\\Controller\\": "ohs/sys/controllers/"
         }
     }
 }
